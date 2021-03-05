@@ -1,0 +1,11 @@
+shorkuts
+rafc					export Funct Compon
+imp						import
+useState			crea un useState
+
+
+useState		hook que permite añadir el estado a un componente de función.
+	Declara una “variable de estado”
+useEffect		hook que permite ejecutar un efecto secundario cuando algo suceda en nuestro componente
+	recom: trabajar los useEffect de manera individual es decir	realizar cambios especificos en una 
+	parte del state o de la aplicacion(tb aplica a funciones u objetos)
