@@ -11,7 +11,7 @@ export const MultipleCustomHooks = () => {
   //aqui quiere decir que si existe la data extrae el valor de la posicion 0
   const { author, quote } = !!data && data[0];
 
-  console.log(author, quote);
+  //console.log(author, quote);
 
   return (
     <div>
@@ -22,8 +22,7 @@ export const MultipleCustomHooks = () => {
         <div className='alert alert-info text-center'>Loading...</div>
       ) : (
         <blockquote className='blockquote text-right'>
-          <p className='mb-0'> {quote} </p>
-          <hr />
+          <p className='mb-4'> {quote} </p>
           <footer className='blockquote-footer'> {author} </footer>
         </blockquote>
       )}
