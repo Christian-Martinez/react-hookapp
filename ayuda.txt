@@ -1,6 +1,6 @@
 shorkuts
-rafc					export Funct Compon
-imp						import
+rafc				export Funct Compon
+imp					import
 useState			crea un useState
 
 CustomHooks	centraliza la logica (ej para los formularios), se puede incluir las validaciones
@@ -12,3 +12,6 @@ useEffect		hook que permite ejecutar un efecto secundario cuando algo suceda en 
 	parte del state o de la aplicacion(tb aplica a funciones u objetos)
 useRef			hook para mantener una referencia mutable
 	ejemplo si demontamos un component dejara de cargar el state
+useLayoutEffect	hook idéntica a useEffect, pero se dispara de forma síncrona después de 
+	todas las mutaciones de DOM
+	ej traer las dimensiones de un div
