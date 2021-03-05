@@ -13,5 +13,5 @@ useEffect		hook que permite ejecutar un efecto secundario cuando algo suceda en 
 useRef			hook para mantener una referencia mutable
 	ejemplo si demontamos un component dejara de cargar el state
 useLayoutEffect	hook idéntica a useEffect, pero se dispara de forma síncrona después de 
-	todas las mutaciones de DOM
-	ej traer las dimensiones de un div
+	todas las mutaciones de DOM	ej traer las dimensiones de un div
+React.memo		previene que el component se vuelva a renderizar si sus prop son las mismas
