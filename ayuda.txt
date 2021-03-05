@@ -15,3 +15,4 @@ useRef			hook para mantener una referencia mutable
 useLayoutEffect	hook idéntica a useEffect, pero se dispara de forma síncrona después de 
 	todas las mutaciones de DOM	ej traer las dimensiones de un div
 React.memo		previene que el component se vuelva a renderizar si sus prop son las mismas
+useMemo         hook que memoriza un valor si los argumentos son iguales, si cambian cambia el valor
