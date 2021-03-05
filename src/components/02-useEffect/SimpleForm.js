@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-//import { Message } from './Message';
+import { Message } from './Message';
 
 import './effect.css';
 
@@ -13,16 +13,16 @@ export const SimpleForm = () => {
 
   //cargara solo una vez
   useEffect(() => {
-    console.log('Cargó por primera vez');
+    /* console.log('Cargó por primera vez'); */
   }, []);
 
   useEffect(() => {
-    console.log('formState cambió');
+    /* console.log('formState cambió'); */
   }, [formState]);
 
   //util para un selector, combobox
   useEffect(() => {
-    console.log('email cambió');
+    /* console.log('email cambió'); */
   }, [email]);
 
   const handleInputChange = ({ target }) => {
@@ -59,6 +59,7 @@ export const SimpleForm = () => {
           onChange={handleInputChange}
         />
       </div>
+      {name === '123' && <Message />}
     </>
   );
 };
