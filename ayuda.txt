@@ -16,3 +16,8 @@ useLayoutEffect	hook idéntica a useEffect, pero se dispara de forma síncrona d
 	todas las mutaciones de DOM	ej traer las dimensiones de un div
 React.memo		previene que el component se vuelva a renderizar si sus prop son las mismas
 useMemo         hook que memoriza un valor si los argumentos son iguales, si cambian cambia el valor
+useCallback     hook que retorna una funcion(componente) memorizada, si non lo manda con el useCallback
+	siempre lo va estar generando una nueva version por cada renderizado del componente padre,
+	(se use con useEffect que tiene una dependencia y esta tiene una funcion debe usar el useCallback 
+	porque de esta manera la anterior funcion no esta cambiando)
+
