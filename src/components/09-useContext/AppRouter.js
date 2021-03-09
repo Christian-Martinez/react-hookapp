@@ -11,16 +11,18 @@ export const AppRouter = () => {
     <Router>
       <div>
         <NavBar />
-        <Switch>
-          {/* exact, el path debe ser exacto, valida que /login no coincida con el solo / de HomeScreen */}
-          <Route exact path='/' component={HomeScreen} />
+        <div className='container'>
+          <Switch>
+            {/* exact, el path debe ser exacto, valida que /login no coincida con el solo / de HomeScreen */}
+            <Route exact path='/' component={HomeScreen} />
 
-          <Route exact path='/about' component={AboutScreen} />
-          <Route exact path='/login' component={LoginScreen} />
+            <Route exact path='/about' component={AboutScreen} />
+            <Route exact path='/login' component={LoginScreen} />
 
-          {/* si no encuentra alguna ruta lo redirecciona a home */}
-          <Redirect to='/' />
-        </Switch>
+            {/* si no encuentra alguna ruta lo redirecciona a home */}
+            <Redirect to='/' />
+          </Switch>
+        </div>
       </div>
     </Router>
   );
