@@ -21,3 +21,7 @@ useCallback     hook que retorna una funcion(componente) memorizada, si non lo m
 	(se use con useEffect que tiene una dependencia y esta tiene una funcion debe usar el useCallback 
 	porque de esta manera la anterior funcion no esta cambiando)
 
+useReducer es igual al useState pero es mas utilizado cuando hay mas acciones que pueden modificar el state
+	en la funcion de reducer estan las acciones de mi aplicacion
+	tendria que revisar los reducer para ver como maneja la logica de la manipulacion
+	de cada posible accion que esa aplicacion pueda utilizar
