@@ -25,3 +25,5 @@ useReducer es igual al useState pero es mas utilizado cuando hay mas acciones qu
 	en la funcion de reducer estan las acciones de mi aplicacion
 	tendria que revisar los reducer para ver como maneja la logica de la manipulacion
 	de cada posible accion que esa aplicacion pueda utilizar
+
+useContext ayuda en la comunicacion entre componentes sin mandarlo por las props
